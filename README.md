@@ -1,2 +1,3 @@
 Product Preview Card Component challenge hosted by frontendmentor.io
-Demo: 
+<br/>
+Demo: https://rafalfuz.github.io/product-preview-card-component/
