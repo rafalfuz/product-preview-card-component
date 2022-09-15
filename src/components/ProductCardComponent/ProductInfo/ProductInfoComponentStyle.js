@@ -10,3 +10,9 @@ export const StyledProductInfoComponent = styled.div`
     border-radius: 0 20px 20px 0;
   }
 `;
+
+export const StyledProductInfoComponentContainer = styled.div`
+  @media screen and (min-width: 420px) {
+    width: 70%;
+  }
+`;
