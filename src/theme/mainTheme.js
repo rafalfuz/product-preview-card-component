@@ -17,3 +17,7 @@ export const theme = {
     fraunces: "'Fraunces', serif;",
   },
 };
+
+{
+  /*@media screen and (min-width: 420px)*/
+}
