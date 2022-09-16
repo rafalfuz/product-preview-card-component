@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledProductImageComponent = styled.div`
-  flex-basis: 60%;
   background-image: ${({ productImageMobileAndDesktop }) =>
     `url(${productImageMobileAndDesktop.productImageMobile})`};
   background-repeat: no-repeat;

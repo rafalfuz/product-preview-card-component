@@ -6,11 +6,23 @@ import productImageDesktop from "../../assets/product-preview-card-component-mai
 
 const products = { productImageMobile, productImageDesktop };
 
-export const ProductCardComponent = () => {
+export const ProductCardComponent = ({
+  kindOfProd,
+  nameOfProd,
+  descriptionOfProd,
+  newPrice,
+  oldPrice,
+}) => {
   return (
     <StyledProductCardComponent>
       <ProductImageComponent productImageMobileAndDesktop={products} />
-      <ProductInfoComponent />
+      <ProductInfoComponent
+        kindOfProd={kindOfProd}
+        nameOfProd={nameOfProd}
+        descriptionOfProd={descriptionOfProd}
+        newPrice={newPrice}
+        oldPrice={oldPrice}
+      />
     </StyledProductCardComponent>
   );
 };

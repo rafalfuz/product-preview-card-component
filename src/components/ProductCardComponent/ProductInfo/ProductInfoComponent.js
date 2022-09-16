@@ -1,20 +1,40 @@
 import {
   StyledProductInfoComponent,
   StyledProductInfoComponentContainer,
+  StyledKindOfProduct,
+  StyledNameOfProduct,
+  StyledDescriptionOfProduct,
+  StyledPriceContainer,
+  StyledNewPriceOfProduct,
+  StyledOldPriceOfProduct,
 } from "./ProductInfoComponentStyle";
 
-export const ProductInfoComponent = () => {
+import { Button } from "../../Button/Button";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+
+export const ProductInfoComponent = ({
+  kindOfProd,
+  nameOfProd,
+  descriptionOfProd,
+  newPrice,
+  oldPrice,
+}) => {
   return (
     <StyledProductInfoComponent>
       <StyledProductInfoComponentContainer>
-        <p>PERFUME</p>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-          voluptatibus aut, corporis eaque eum culpa recusandae distinctio!
-        </p>
-        <h1>Price/ Price</h1>
-        <button>Add to card</button>
+        <StyledKindOfProduct>{kindOfProd}</StyledKindOfProduct>
+        <StyledNameOfProduct>{nameOfProd}</StyledNameOfProduct>
+        <StyledDescriptionOfProduct>
+          {descriptionOfProd}
+        </StyledDescriptionOfProduct>
+        <StyledPriceContainer>
+          <StyledNewPriceOfProduct>{newPrice}</StyledNewPriceOfProduct>
+          <StyledOldPriceOfProduct>{oldPrice}</StyledOldPriceOfProduct>
+        </StyledPriceContainer>
+
+        <Button>
+          <AiOutlineShoppingCart /> Add to Cart
+        </Button>
       </StyledProductInfoComponentContainer>
     </StyledProductInfoComponent>
   );
