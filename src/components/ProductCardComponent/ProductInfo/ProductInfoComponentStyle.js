@@ -33,9 +33,6 @@ export const StyledNameOfProduct = styled.h1`
   font-family: ${({ theme }) => theme.fontFamily.fraunces};
   padding: 10px 0;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  @media screen and (min-width: 420px) {
-    padding: 20px 0;
-  }
 `;
 
 export const StyledDescriptionOfProduct = styled.p`
@@ -44,9 +41,6 @@ export const StyledDescriptionOfProduct = styled.p`
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   line-height: 150%;
-  @media screen and (min-width: 420px) {
-    padding: 20px 0;
-  }
 `;
 export const StyledPriceContainer = styled.div`
   display: flex;

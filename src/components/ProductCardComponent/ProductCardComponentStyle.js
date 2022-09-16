@@ -11,7 +11,7 @@ export const StyledProductCardComponent = styled.main`
   align-items: center;
   @media screen and (min-width: 420px) {
     width: 50%;
-    height: 50%;
+    height: 60%;
     flex-direction: row;
   }
 `;
